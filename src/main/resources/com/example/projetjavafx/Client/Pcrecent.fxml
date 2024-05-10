@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="400.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavafx.Client.PcrecentController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="180.0" prefWidth="173.0">
+         <children>
+            <ImageView fx:id="imgpc" fitHeight="118.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/pc/10.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0">
+         <padding>
+            <Insets bottom="15.0" top="15.0" />
+         </padding>
+      </Separator>
+      <VBox alignment="CENTER" prefHeight="180.0" prefWidth="229.0">
+         <children>
+            <VBox prefHeight="99.0" prefWidth="197.0">
+               <children>
+                  <Label fx:id="nompc" alignment="CENTER" prefHeight="36.0" prefWidth="241.0" text="PC Gamer Xtreme" textFill="#1176c3">
+                     <font>
+                        <Font name="Andalus" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="puissance" alignment="CENTER" prefHeight="19.0" prefWidth="224.0" text="i9 10 generation">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="stockage" alignment="CENTER" prefHeight="30.0" prefWidth="241.0" text="Stockge 1 T SSD">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ram" alignment="CENTER" prefHeight="30.0" prefWidth="241.0" text="RAM 8G">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button fx:id="btninfo" mnemonicParsing="false" onAction="#plusinfo" prefHeight="31.0" prefWidth="177.0" stylesheets="@../styles/style.css" text="Plus information">
+               <styleClass>
+                  <String fx:value="btn-bluegradienbg" />
+                  <String fx:value="mousse-noved" />
+               </styleClass>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="225.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/icone/like.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnlike" mnemonicParsing="false" onAction="#like" prefHeight="0.0" prefWidth="79.0" style="-fx-background-color: eff2f8;" stylesheets="@../styles/style.css" text="j´aime" textFill="#1856d0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="nbrlikr" prefHeight="48.0" prefWidth="42.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="idpc" prefHeight="17.0" prefWidth="0.0" visible="false" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="mouse-noved" />
+      <String fx:value="mousse-noved" />
+      <String fx:value="selected" />
+   </styleClass>
+</HBox>

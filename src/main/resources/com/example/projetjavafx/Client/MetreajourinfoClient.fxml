@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1280.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavafx.Client.MetreajrinfoClientController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="185.0" text="PC Marché" textFill="#1981c3">
+               <font>
+                  <Font name="Edwardian Script ITC" size="36.0" />
+               </font>
+            </Label>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="35.0" prefWidth="5.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="31.0" prefWidth="239.0" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="white-backroung" stylesheets="@../../../../../../../demo/src/main/resources/com/example/demo/CSS/style.css" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="153.0">
+               <children>
+                  <StackPane>
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/Profil.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <Label fx:id="username" prefHeight="49.0" prefWidth="130.0" text=" Othman arejdal">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="625.0" prefWidth="1092.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="581.0" prefWidth="1092.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="388.0" layoutY="97.0" prefHeight="397.0" prefWidth="316.0" style="-fx-border-radius: 5px;">
+                     <stylesheets>
+                        <URL value="@styles/style.css" />
+                        <URL value="@../styles/style.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="around-layout" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                     <children>
+                        <AnchorPane id="LoginForm" fx:id="login" prefHeight="359.0" prefWidth="313.0" style="-fx-background-radius: 8px;" styleClass="radus" stylesheets="@../styles/style.css">
+                           <children>
+                              <Label layoutX="49.0" layoutY="5.0" text="Met à jour les informations" textFill="#1573c5">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <TextField fx:id="email" layoutX="36.0" layoutY="142.0" prefHeight="40.0" prefWidth="250.0" promptText="Email..." style="-fx-border-radius: 8px;" stylesheets="@../styles/style.css">
+                                 <styleClass>
+                                    <String fx:value="white-beg" />
+                                    <String fx:value="textField-1" />
+                                 </styleClass>
+                              </TextField>
+                              <Button fx:id="inscrirer" layoutX="36.0" layoutY="290.0" mnemonicParsing="false" onAction="#metreajrinfoClient" prefHeight="40.0" prefWidth="250.0" stylesheets="@../styles/style.css" text="Met à jour les informations">
+                                 <styleClass>
+                                    <String fx:value="btn-bluegradienbg" />
+                                    <String fx:value="mousse-noved" />
+                                 </styleClass>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <TextField fx:id="nom" layoutX="37.0" layoutY="63.0" prefHeight="40.0" prefWidth="250.0" promptText="Nom..." style="-fx-border-radius: 8px;" stylesheets="@../styles/style.css">
+                                 <styleClass>
+                                    <String fx:value="white-beg" />
+                                    <String fx:value="textField-1" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="tele" layoutX="39.0" layoutY="222.0" prefHeight="40.0" prefWidth="250.0" promptText="Telephone..." style="-fx-border-radius: 8px;" stylesheets="@../styles/style.css">
+                                 <styleClass>
+                                    <String fx:value="white-beg" />
+                                    <String fx:value="textField-1" />
+                                 </styleClass>
+                              </TextField>
+                              <Label layoutX="42.0" layoutY="36.0" text="Saisissez votre nom :" textFill="#8895bc">
+                                 <font>
+                                    <Font name="System Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="44.0" layoutY="110.0" text="Saisissez votre email :" textFill="#8895bc">
+                                 <font>
+                                    <Font name="System Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="46.0" layoutY="189.0" text="Saisissez votre Telephone :" textFill="#8895bc">
+                                 <font>
+                                    <Font name="System Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="188.0" style="-fx-background-color: rgb(224, 229, 233);" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="519.0" prefWidth="188.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="69.0" prefWidth="188.0">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/menu.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="26.0" prefWidth="61.0" text="Menu" textFill="#1881aa">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbaccueil" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/Accueil.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#chgtoaccueil" prefHeight="25.0" prefWidth="112.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="Accueil">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox fx:id="hbrecherche" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/recherche.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#chgtorecherche" prefHeight="25.0" prefWidth="146.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="Recherche avancée">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox fx:id="hbpanier" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/Panier.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#chgtopanier" prefHeight="25.0" prefWidth="112.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="Panier d'achat">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox fx:id="hbprofil" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" stylesheets="@../styles/style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/Profil.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="Profil">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="mouse-noved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox fx:id="hbnotification" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <children>
+                        <HBox fx:id="hbnotification1" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="notificationconteur" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="51.0" text="10" textFill="#1d8cb5">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="45.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../imgs/icone/Notification.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <Button mnemonicParsing="false" onAction="#chgtonotification" prefHeight="25.0" prefWidth="112.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="Notification">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox fx:id="hbnous" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/AboutUs.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#chgtonous" prefHeight="25.0" prefWidth="125.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="À propos de nous">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox fx:id="deconnexion" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="188.0" styleClass="mouse-noved" stylesheets="@../styles/style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/icone/logout.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#deconnecter" prefHeight="25.0" prefWidth="127.0" styleClass="trnsparent" stylesheets="@../styles/style.css" text="Déconnexion">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

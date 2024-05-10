@@ -1,0 +1,43 @@
+.white-backroung{
+-fx-background-color:#fff;
+}
+
+.trnsparent{
+-fx-background-color: rgba(0,0,0,0);
+}
+.around-layout{
+-fx-border-radius: 50;
+-fx-border-color:#070707;
+}
+.selected{
+-fx-background-color:#F3F3F3;
+}
+.mouse-noved:hover{
+-fx-background-color:#E4E4E4;
+}
+
+.transform :hover{
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.02;
+}
+
+.custom-dialog .button {
+    -fx-background-color: rgb(220,53,69);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+
+
+.btn-bluegradienbg{
+-fx-background-color: linear-gradient(to bottom right , #188ba7,#306090);
+-fx-text-fill: #fff;
+}
+.mousse-noved:hover{
+-fx-border-color:linear-gradient(to bottom right , #188ba7,#306090);
+-fx-background-color: #fff;
+-fx-text-fill: linear-gradient(to bottom right , #188ba7,#306090);
+-fx-border-radius:5px;
+}
+.shadow{
+-fx-effect:dropShadow(tree-pass-box,rgba(0,0,0,0),10,0,0,10);
+}
